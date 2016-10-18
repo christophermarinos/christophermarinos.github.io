@@ -1,0 +1,55 @@
+ul { text-align: center; list-style: none;}
+
+li {display: inline; text-align: center; padding: 50px;}
+
+body {
+text-align: center;
+}
+
+head { text-align: center;}
+
+h2 {text-align: center;}
+
+div {
+    width: 900px;
+    padding: 1px;
+    border: 1px solid gray;
+        text-align: left;
+        background-image: url(backgd.jpg);
+}/*the preceding block makes each div into its own window as well as giving it a                                                                                         nice blue background.*/
+
+a:hover
+{
+    text-decoration: none;
+        color: grey;
+}
+
+a:visited
+{
+    text-decoration: none;
+        color: blue;
+}/*control of hypertext links in the list*/
+
+a:link
+{
+text-decoration: none;
+        color: black;
+}
+
+a:active
+{
+text-decoration: none;
+        color: black;
+}
+
+img {
+    border: 3px solid #fff;
+    border-radius: 10px;
+    padding: 2px;
+}/*this gives auto padding to all images*/
+
+
+
+p, fluffykitty  {text-align: center; color: black; font-family: courier;}
+
+p, lowell {text-align: left; color: black; font-family: courier;}
