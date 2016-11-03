@@ -1,3 +1,8 @@
+
+/*this style sheet has been coded by christopher marinos for the assignment 4 in  Umass Lowell's GUI course*/
+
+
+
 ul { text-align: center; list-style: none;}
 
 li {display: inline; text-align: center; padding: 50px;}
@@ -13,33 +18,33 @@ h2 {text-align: center;}
 div {
     width: 900px;
     padding: 1px;
-    border: 1px solid gray;
-        text-align: left;
-        background-image: url(backgd.jpg);
-}/*the preceding block makes each div into its own window as well as giving it a                                                                                         nice blue background.*/
+    border: 1px solid gray; 
+	text-align: left;
+	background-image: url(backgd.jpg);
+}/*the preceding block makes each div into its own window as well as giving it a nice blue background.*/
 
 a:hover
 {
     text-decoration: none;
-        color: grey;
+	color: grey;
 }
 
 a:visited
 {
     text-decoration: none;
-        color: blue;
+	color: blue;
 }/*control of hypertext links in the list*/
 
 a:link
 {
 text-decoration: none;
-        color: black;
+	color: black;
 }
 
 a:active
 {
 text-decoration: none;
-        color: black;
+	color: black;
 }
 
 img {
