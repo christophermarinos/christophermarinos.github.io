@@ -7,6 +7,7 @@ function addTable(a, b, c, d) {
     var rawInput  = prawInput[0];//this is an array. an array is a variable length list of numbers, strings, or even user defined types.
     var myregexp = /^(\s*[0-9]+[0-9]*\s+[0-9]+[0-9]*\s+[0-9]+[0-9]*\s+[0-9]+[0-9]*\s*)$/;//a regular expression is used to match patterns in strings
     var eleminps = rawInput.elements;//the input string
+    document.getElementById("myDynamicTable").innerHTML = "";
     var myTableDiv = document.getElementById("myDynamicTable"); 
     var table = document.createElement('TABLE');
     table.border='1';
