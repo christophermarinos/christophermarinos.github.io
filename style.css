@@ -55,9 +55,9 @@ img {
 
 table, th, td {
    border: 1px solid black;
+   tr:nth-child(even) {background-color: #f2f2f2}
 }
 
- tr:nth-child(even) {background-color: #f2f2f2}
 
 p, fluffykitty  {text-align: center; color: black; font-family: courier;}
 
