@@ -53,7 +53,9 @@ img {
     padding: 2px;
 }/*this gives auto padding to all images*/
 
-
+table, th, td {
+   border: 1px solid black;
+}
 
 p, fluffykitty  {text-align: center; color: black; font-family: courier;}
 
