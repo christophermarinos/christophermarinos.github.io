@@ -6,10 +6,7 @@ function addTable(a, b, c, d) {
     var prawInput = document.getElementById("InputForm").children;//this form will receive input from the user. This way the app is interactive.
     var rawInput  = prawInput[0];//this is an array. an array is a variable length list of numbers, strings, or even user defined types.
     var myregexp = /^(\s*[0-9]+[0-9]*\s+[0-9]+[0-9]*\s+[0-9]+[0-9]*\s+[0-9]+[0-9]*\s*)$/;//a regular expression is used to match patterns in strings
-    alert(rawInput);
     var eleminps = rawInput.elements;//the input string
-    alert(eleminps[0].value);
-    document.getElementById("InputForm").style.visibility = 'hidden';//I decided to hide then input form when the table is displayed
     var myTableDiv = document.getElementById("myDynamicTable"); 
     var table = document.createElement('TABLE');
     table.border='1';
