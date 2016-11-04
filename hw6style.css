@@ -7,7 +7,7 @@ text-align: center;
 
 head { text-align: center;}/*this does the same for the head*/
 
-div {
+#InputForm {
     width: 900px;
     padding: 1px;
     border: 1px solid gray; 
