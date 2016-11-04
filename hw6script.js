@@ -18,7 +18,7 @@ function addTable(a, b, c, d) {
     table.appendChild(tableBody);//via the DOM we attach the table body to the table
     
     if(myregexp.test(eleminps[0].value)==false){
-        handle_error(rawInput.elements);
+        handle_error(eleminps[0].value);
         }
 	
 	var myarr = eleminps[0].value.split(/\s+/);//this gets an array split along whitespace
