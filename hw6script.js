@@ -68,5 +68,6 @@ function addTable(a, b, c, d) {
 
 function handle_error()
 {
+	//if we are here the regex returned false which means we have to explain in greater detail what "four numbers 
 	;
 }
