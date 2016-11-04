@@ -47,10 +47,7 @@ function addTable(a, b, c, d) {
        for (var j=0; j<colmax + 2; j++){//now we populate with data. i absorbed some offset complexity (all the +1 and -1) to keep things concise
            var td = document.createElement('TD');
            td.width='75';
-		   if(i == 0 && j == 0) {//
-		   
-		   
-		   the top left corner and does not have an entry
+		   if(i == 0 && j == 0) {//the top left corner and does not have an entry
 		    td.appendChild(document.createTextNode(' '));}//no entry; this is the 0th 0th aka top left 
 		   if(i != 0 && j == 0){//if it is the leftmost column 
 		    td.appendChild(document.createTextNode(i-1 + arg1));}    
