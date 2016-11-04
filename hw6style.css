@@ -8,7 +8,7 @@ text-align: center;
 head { text-align: center;}/*this does the same for the head*/
 
 div {
-    width: 9000px;
+    width: 900px;
     padding: 1px;
     border: 1px solid gray; 
 	text-align: left;
