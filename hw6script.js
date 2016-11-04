@@ -47,12 +47,12 @@ function addTable(a, b, c, d) {
        for (var j=0; j<colmax + 2; j++){//now we populate with data. i absorbed some offset complexity (all the +1 and -1) to keep things concise
            var td = document.createElement('TD');
            td.width='75';
-		   if(i == 0 && j == 0)//it is the top left corner and does not have an entry
-		   {td.appendChild(document.createTextNode(' '));}//no entry; this is the 0th 0th aka top left 
-		   if(i != 0 && j == 0)//if it is the leftmost column 
-		   {td.appendChild(document.createTextNode(i-1 + arg1));}    
-	       if(j != 0 && i == 0)//if it is the topmost row
-		   {td.appendChild(document.createTextNode(j-1 + arg3));}//if it is neither the top left, the topmost row or the leftmost column then it is an entry in the table (ith row * jth column)   
+		   if(i == 0 && j == 0) }//it is the top left corner and does not have an entry
+		    td.appendChild(document.createTextNode(' '));}//no entry; this is the 0th 0th aka top left 
+		   if(i != 0 && j == 0){//if it is the leftmost column 
+		    td.appendChild(document.createTextNode(i-1 + arg1));}    
+	       if(j != 0 && i == 0) {//if it is the topmost row
+		    td.appendChild(document.createTextNode(j-1 + arg3));}//if it is neither the top left, the topmost row or the leftmost column then it is an entry in the table (ith row * jth column)   
 		   if(i != 0 && j != 0) {
                         td.appendChild(document.createTextNode((i-1 + arg1) * (j-1 + arg3)));
 		   }
@@ -69,7 +69,7 @@ function handle_error(errstr)
 {
 	//if we are here the regex returned false which means we have to explain in greater detail what "four numbers 
     nonnum = /[^0-9]/; //this will detect non-numerical characters
-    if(nonnum.test(errstr)==false){
+    if(nonnum.test(errstr)==true){
     	alert("non numeric character detected- please input no more or less than four numbers separated by spaces");    
     }
 	
