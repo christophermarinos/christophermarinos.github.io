@@ -18,14 +18,12 @@ function addTable(a, b, c, d) {
     table.appendChild(tableBody);//via the DOM we attach the table body to the table
     
     if(myregexp.test(eleminps[0].value)==false){
-        alert("Invalid Input");//call the function for invalid input; we know that we do not have any amount of whitespace separating four and only four digits but we need to know more to help the use enter input correctly
-        return
+        handle_error(rawInput.elements);
         }
 	
 	var myarr = eleminps[0].value.split(/\s+/);//this gets an array split along whitespace
 	
-	if(myarr.length == 4)//this is ideal; there was no leading whitespace ie "   1 2 3 4"
-	{
+	if(myarr.length == 4){//this is ideal; there was no leading whitespace ie "   1 2 3 4"
 	arg1 = Number(myarr[0]);
 	arg2 = Number(myarr[1]);
 	arg3 = Number(myarr[2]);
@@ -55,9 +53,10 @@ function addTable(a, b, c, d) {
 		   {td.appendChild(document.createTextNode(i-1 + arg1));}    
 	       if(j != 0 && i == 0)//if it is the topmost row
 		   {td.appendChild(document.createTextNode(j-1 + arg3));}//if it is neither the top left, the topmost row or the leftmost column then it is an entry in the table (ith row * jth column)   
-		   if(i != 0 && j != 0)
-           {td.appendChild(document.createTextNode((i-1 + arg1) * (j-1 + arg3)));}
-           tr.appendChild(td);
+		   if(i != 0 && j != 0) {
+                        td.appendChild(document.createTextNode((i-1 + arg1) * (j-1 + arg3)));
+		   }
+                        tr.appendChild(td);
        }
 
 	   
@@ -66,8 +65,13 @@ function addTable(a, b, c, d) {
    
 }
 
-function handle_error()
+function handle_error(errstr)
 {
 	//if we are here the regex returned false which means we have to explain in greater detail what "four numbers 
-	;
+    nonnum = /[^0-9]/; //this will detect non-numerical characters
+    if(nonnum.test(errstr)==false){
+    	alert("non numeric character detected- please input no more or less than four numbers separated by spaces");    
+    }
+	
+	alert("invalid input- please enter no more or less than four numbers separated by spaces");//at this point we have to do the failover warning and hope the user catches on
 }
