@@ -22,6 +22,8 @@ head { text-align: center;}/*this does the same for the head*/
 table, th, td {
    border: 1px solid grey;
    background-image: url(backgd.jpg);
+   tr:hover {background-color: #f5f5f5}/*this creates a hover effect in white along any moused over table column*/
+   font-family: "Times New Roman", Times, serif;
 }/*gives a double bordeer to the table*/
 
-tr:hover {background-color: #f5f5f5}/*this creates a hover effect in white along any moused over table column*/
+
