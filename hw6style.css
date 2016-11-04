@@ -18,7 +18,6 @@ div {
     border: 1px solid gray; 
 	text-align: left;
 	background-image: url(backgd.jpg);
-	overflow: auto;
 }/*this sets a background for the div. both the input and the dynamic table div are affected by this*/
 
 table, th, td {
