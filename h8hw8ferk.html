@@ -1,0 +1,84 @@
+<!-- Christopher Marinos the html file for GUI 1's assignment 8 at Umass Lowell, Fall semester 2016 -->
+<!doctype html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title>jQuery UI Tabs functionality</title>
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+        <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <script src = "hw8scriptferk.js"></script>	
+   </head>
+	<body>
+ 
+ 
+ 
+     <div id="slider-0"></div>
+
+     <div id="InputForm0"><!--for access to the form -->
+     <form id="frm0"><!--for acces to the form's data -->
+      Enter Four Digits Separated By One Or More Spaces: 
+     <input id="field0" name="field"><!--the field -->
+     <br/>
+
+<!--THE OTHER THREE DIVS DO THE SAME AS THE ONE NOTATED AT THE TOP-->
+     </form>
+     </div>
+
+     <div id="slider-1"></div>
+
+     <div id="InputForm1">
+     <form id="frm1">
+         Enter Four Digits Separated By One Or More Spaces: 
+     <input class="target" id="field1" name="field">
+     <br/>
+        </form>
+        </div>
+		
+		     <div id="slider-2"></div>
+
+        <div id="InputForm2">
+        <form id="frm2">
+            Enter Four Digits Separated By One Or More Spaces: 
+            <input id="field2" name="field">
+<br/>
+        </form>
+        </div>
+		
+		     <div id="slider-3"></div>
+
+        <div id="InputForm3">
+        <form id="frm3">
+            Enter Four Digits Separated By One Or More Spaces: 
+            <input id="field3" name="field">
+<br/>
+        </form>
+		
+		<br/>
+<button id='frfykitty'>Add Tab</button><!--This button replaces generate table; it sends the table to a tab. Unfortunately this is not totally successful-->
+        </div>
+		
+		        </div><!-- A blank div that is added to dynamically as the sliders and text boxes are manipulated-->
+        <div id="myDynamicTable">
+        </div>
+		
+
+
+<div id='tabs'><!--a blank div that contains tabs-->
+    <ul>
+    </ul>
+
+<button id='remove-tab'>remove tab</button><!--calls the remove tab function-->
+
+
+ 
+<div id="cblist"><!--this gets populated with checkboxes; the plan was that clicking on a check box and then hitting delete would delete the appropriate tab but I never got tab deletion working correctly, unfortunately-->
+</div>
+
+
+
+
+<script type="text/javascript" src="eventhandler.js"></script>
+ 
+</body>
+</html>
